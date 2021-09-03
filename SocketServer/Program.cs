@@ -6,7 +6,12 @@ namespace SocketServer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var echo = new EchoServer();
+
+            echo.Start();
+
+            Console.WriteLine("Echo Server running");
+            Console.ReadLine();
         }
     }
 }
